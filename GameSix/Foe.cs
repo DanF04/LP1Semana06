@@ -1,0 +1,10 @@
+﻿
+namespace GameSix
+{
+    class Foe
+    { 
+
+    }
+
+
+}
