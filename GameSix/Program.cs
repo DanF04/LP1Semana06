@@ -21,7 +21,11 @@ namespace GameSix
                 string foename = Console.ReadLine();
                 allenemies[i] = new Foe(foename);
             }
-
+            
+            foreach (var foe in allenemies)
+            {
+                Console.WriteLine($"name: {foe.Getname()}");
+            }
         }
     }
 }
