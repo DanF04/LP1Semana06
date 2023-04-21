@@ -1,4 +1,5 @@
 ﻿using System;
+using static GameSix.Foe;
 
 namespace GameSix
 {
@@ -6,7 +7,11 @@ namespace GameSix
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            
+        
+            Foe loki = new Foe("loki");
+            loki.Setname(" Grinddalokki ");
+            Console.WriteLine($"Name is {loki.Getname()} and HP is {loki.Gethealth()}");
         }
     }
 }
