@@ -35,7 +35,11 @@ namespace GameSix
             Console.WriteLine($"Obtained powers: {Foe.Getpower()}");
 
 
+<<<<<<< HEAD
             Console.WriteLine("Merci d'utiliser ce programme!");
+=======
+            Console.WriteLine("Thanks for using this program!");
+>>>>>>> fb5d092 (final message)
 
 
 
