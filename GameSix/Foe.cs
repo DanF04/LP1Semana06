@@ -7,12 +7,14 @@ namespace GameSix
         private string name {get ; set;}
         private float health {get ; set;}
         private float shield {get ; set;}
+        private static int powercounter {get ; set;}
 
         public Foe(string name)
         {
             Setname(name);
             health = 100;
             shield = 0;
+            powercounter = 0;
         }
 
         public string Getname()
@@ -26,6 +28,11 @@ namespace GameSix
         public float Getshield()
         {
             return shield;
+        }
+
+        public static int Getpower()
+        {
+            return powercounter;
         }
 
         public void Setname(string newname)
@@ -49,6 +56,8 @@ namespace GameSix
 
         public void PickupPowerUp(PowerUp PU, float F)
         {
+            powercounter += 1;
+            
             if (PU == PowerUp.health)
             {
                 health += F;
@@ -66,6 +75,7 @@ namespace GameSix
                     shield = 100;
                 }
             }
+        
         }
 
     }
