@@ -21,11 +21,20 @@ namespace GameSix
                 string foename = Console.ReadLine();
                 allenemies[i] = new Foe(foename);
             }
-            
+
             foreach (var foe in allenemies)
             {
                 Console.WriteLine($"name: {foe.Getname()}");
             }
+
+            allenemies[0].TakeDamage(50);
+            Console.WriteLine($"Damage taken... current health: {allenemies[0].Gethealth()}");
+            allenemies[0].PickupPowerUp(PowerUp.health, 60);
+            allenemies[0].PickupPowerUp(PowerUp.shield, 10);
+            Console.WriteLine($"Picked up two powerups!!! current health: {allenemies[0].Gethealth()} and current shield: {allenemies[0].Getshield()}");
+
+
+
         }
     }
 }
