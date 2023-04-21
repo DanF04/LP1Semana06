@@ -47,6 +47,27 @@ namespace GameSix
             }
         }
 
+        public void PickupPowerUp(PowerUp PU, float F)
+        {
+            if (PU == PowerUp.health)
+            {
+                health += F;
+                if (health > 100)
+                {
+                    health = 100;
+                }
+            }
+
+            if (PU == PowerUp.shield)
+            {
+                shield += F;
+                if (shield > 100)
+                {
+                    shield = 100;
+                }
+            }
+        }
+
     }
    
         
