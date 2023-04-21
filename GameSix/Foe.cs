@@ -18,6 +18,15 @@ namespace GameSix
         {
             return name;
         }
+        public float Gethealth()
+        {
+            return health;
+        }
+        public float Getshield()
+        {
+            return shield;
+        }
+
         
         public void TakeDamage (float damage)
         {
