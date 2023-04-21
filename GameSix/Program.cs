@@ -35,6 +35,9 @@ namespace GameSix
             Console.WriteLine($"Obtained powers: {Foe.Getpower()}");
 
 
+            Console.WriteLine("Merci d'utiliser ce programme!");
+
+
 
         }
     }
