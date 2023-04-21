@@ -7,11 +7,21 @@ namespace GameSix
     {
         static void Main(string[] args)
         {
-            
-        
             Foe loki = new Foe("loki");
             loki.Setname(" Grinddalokki ");
             Console.WriteLine($"Name is {loki.Getname()} and HP is {loki.Gethealth()}");
+
+            Console.WriteLine("Insert number of enemies: ");
+            int NrOfEnemies = Convert.ToInt32(Console.ReadLine());
+            Foe[] allenemies = new Foe[NrOfEnemies];
+
+            for (int i = 0; i < NrOfEnemies; i++)
+            {
+                Console.WriteLine($"Enemy {i+1} name: ");
+                string foename = Console.ReadLine();
+                allenemies[i] = new Foe(foename);
+            }
+
         }
     }
 }
