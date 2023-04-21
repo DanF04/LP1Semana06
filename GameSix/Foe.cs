@@ -1,7 +1,7 @@
 ﻿
 namespace GameSix
 {
-    class Foe
+    public class Foe
     { 
 
     }
