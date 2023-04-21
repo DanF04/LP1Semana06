@@ -32,6 +32,7 @@ namespace GameSix
             allenemies[0].PickupPowerUp(PowerUp.health, 60);
             allenemies[0].PickupPowerUp(PowerUp.shield, 10);
             Console.WriteLine($"Picked up two powerups!!! current health: {allenemies[0].Gethealth()} and current shield: {allenemies[0].Getshield()}");
+            Console.WriteLine($"Obtained powers: {Foe.Getpower()}");
 
 
 
