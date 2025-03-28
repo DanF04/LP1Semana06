@@ -40,10 +40,9 @@ namespace MyGame
             return shield;
         }
 
-        public string SetName(string s)
+        public void SetName(string s)
         {
-            s = name;
-            return name;
+            name = s.Substring(0, Math.Min(8, s.Length));
         }
    } 
 }
