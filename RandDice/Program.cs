@@ -19,7 +19,16 @@
                  Console.WriteLine("Erro: Os argumentos devem ser números inteiros.");
                  return;
              }
-        }
-
+ 
+             Random random = new Random(s);
+             int soma = 0;
+ 
+             for (int i = 0; i < n; i++)
+             {
+                 soma += random.Next(1, 7);
+             }
+ 
+             Console.WriteLine(soma);
+         }
      }
  }
