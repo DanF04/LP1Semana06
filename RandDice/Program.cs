@@ -14,7 +14,12 @@
                  return;
              }
  
+             if (!int.TryParse(args[0], out int n) || !int.TryParse(args[1], out int s))
+             {
+                 Console.WriteLine("Erro: Os argumentos devem ser números inteiros.");
+                 return;
+             }
+        }
 
-         }
      }
  }
